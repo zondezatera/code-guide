@@ -214,20 +214,20 @@ layout: default
 		<ul>
 			<li>ใช้ soft tabs เพื่อเว้นระยะช่องช่องไฟ(spaces 2 ครั้ง) ซึ่งมันเป็นการวิธีการเดียวที่จะรับประกันว่า code จะไปในทางเดียวกันในสภาพแวดล้อมต่างๆ</li>
 			<li>เมือมีหลายๆ selector ควรให้ แต่ละ selector อยู่บรรทัดเดียวเท่านั้น</li>
-			<li>Include one space before the opening brace of declaration blocks for legibility.</li>
-			<li>วางวงเล็บปีกกา ของแต่ละ block ในบรรทัดใหม่</li>
+			<li>ใส่ space 1 ครั้งก่อนที่วงเล็บเปิดของแต่ละ block เพื่อง่ายต่อการอ่าน</li>
+			<li>วางวงเล็บปิดของแต่ละ block ในบรรทัดใหม่</li>
 			<li>ใส่ space 1 ครั้ง หลังจาก <code>:</code> ประกาศใหม่ในทุกๆครั้ง</li>
 			<li>Each declaration should appear on its own line for more accurate error reporting.</li>
-			<li>End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.</li>
+			<li>เมื่อสิ้นสุดการประกาศทั้งหมดแล้วต้อง semi-colon (;). The last declaration's is optional, but your code is more error prone without it.</li>
 			<li>Comma-separated property values should include a space after each comma (เช่น <code>box-shadow</code>).</li>
 			<li>Don't include spaces after commas <em>within</em> <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code>, or <code>rect()</code> values. This helps differentiate multiple color values (comma, no space) from multiple property values (comma with space).</li>
-			<li>Don't prefix property values or color parameters with a leading zero (เช่น <code>.5</code> instead of <code>0.5</code> and <code>-.5px</code> instead of <code>-0.5px</code>).</li>
-			<li>Lowercase all hex values, เช่น <code>#fff</code>. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.</li>
-			<li>Use shorthand hex values where available, เช่น <code>#fff</code> instead of <code>#ffffff</code>.</li>
-			<li>Quote attribute values in selectors, เช่น <code>input[type="text"]</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">They’re only optional in some cases</a>, and it’s a good practice for consistency.</li>
-			<li>ควรหลีกเลี่ยงการระบุหน่วยค่าเป็นศูนย์ เช่น <code>margin: 0;</code> ควรแทนด้วย <code>margin: 0px;</code>.</li>
+			<li>อย่าใส่ prefix ค่าคุณสมบัติหรือค่าพารามิเตอร์ของสีที่นำหน้าด้วยศูนย์ (เช่น <code>.5</code> ควรแทนด้วย <code>0.5</code> and <code>-.5px</code> ควรแทนด้วย <code>-0.5px</code>)</li>
+			<li>ควรใช้ตัวพิมพ์ทั้งหมดถ้าใช้ในรูปแบบ hex เช่น <code>#fff</code> ถ้าตัวอักษรตัวพิมพ์เล็กมันง่ายที่สังเกตเห็นเมื่อต้องอ่านเอกสารซึ่งพวกมันมีแนวโน้มที่จะไม่ซ้ำกัน</li>
+			<li>ควรใช้ ค่าย่อแบบ hex ถ้าสามารถใช้ได้ เช่น <code>#fff</code> ควรแทนด้วย <code>#ffffff</code></li>
+			<li>การอ้างอิงค่า attribute ใน selector เช่น <code>input[type="text"]</code><a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">ซึ่งมันเป็นเพียงตัวเลือกในบางกรณี</a>และเป็นวิธีที่ดีเพื่อให้มันสอดคล้องกัน</li>
+			<li>หลีกเลี่ยงการระบุหน่วยค่าเป็นศูนย์ เช่น <code>margin: 0;</code> ควรแทนด้วย <code>margin: 0px;</code></li>
 		</ul>
-		<p>ถ้ามีคำถามในส่วนนี้ดู <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">syntax section of the Cascading Style Sheets article</a> บน Wikipedia.</p>
+		<p>ถ้ามีคำถามในส่วนนี้ให้ดู <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">syntax section of the Cascading Style Sheets article</a> บน Wikipedia.</p>
 	</div>
 	<div class="col">
 		{% highlight css %}{% include css/syntax.css %}{% endhighlight %}
